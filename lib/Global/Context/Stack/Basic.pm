@@ -1,6 +1,6 @@
 package Global::Context::Stack::Basic;
-BEGIN {
-  $Global::Context::Stack::Basic::VERSION = '0.001';
+{
+  $Global::Context::Stack::Basic::VERSION = '0.002';
 }
 use Moose;
 with 'Global::Context::Stack';
@@ -19,7 +19,7 @@ Global::Context::Stack::Basic - trivial class implementing Global::Context::Stac
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SEE ALSO
 

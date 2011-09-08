@@ -1,6 +1,6 @@
 package Global::Context::StackFrame;
-BEGIN {
-  $Global::Context::StackFrame::VERSION = '0.001';
+{
+  $Global::Context::StackFrame::VERSION = '0.002';
 }
 use Moose::Role;
 # ABSTRACT: one frame in a stack
@@ -28,7 +28,7 @@ Global::Context::StackFrame - one frame in a stack
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 OVERVIEW
 

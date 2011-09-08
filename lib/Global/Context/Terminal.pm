@@ -1,6 +1,6 @@
 package Global::Context::Terminal;
-BEGIN {
-  $Global::Context::Terminal::VERSION = '0.001';
+{
+  $Global::Context::Terminal::VERSION = '0.002';
 }
 use Moose::Role;
 # ABSTRACT: the origin of a request
@@ -27,7 +27,7 @@ Global::Context::Terminal - the origin of a request
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 OVERVIEW
 

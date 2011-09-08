@@ -1,6 +1,6 @@
 package Global::Context::AuthToken::Basic;
-BEGIN {
-  $Global::Context::AuthToken::Basic::VERSION = '0.001';
+{
+  $Global::Context::AuthToken::Basic::VERSION = '0.002';
 }
 use Moose;
 with 'Global::Context::AuthToken';
@@ -19,7 +19,7 @@ Global::Context::AuthToken::Basic - trivial class implementing Global::Context::
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SEE ALSO
 

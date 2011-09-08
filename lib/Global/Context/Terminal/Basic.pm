@@ -1,6 +1,6 @@
 package Global::Context::Terminal::Basic;
-BEGIN {
-  $Global::Context::Terminal::Basic::VERSION = '0.001';
+{
+  $Global::Context::Terminal::Basic::VERSION = '0.002';
 }
 use Moose;
 with 'Global::Context::Terminal';
@@ -19,7 +19,7 @@ Global::Context::Terminal::Basic - trivial class implementing Global::Context::T
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SEE ALSO
 

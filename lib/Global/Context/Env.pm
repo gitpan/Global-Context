@@ -1,6 +1,6 @@
 package Global::Context::Env;
-BEGIN {
-  $Global::Context::Env::VERSION = '0.001';
+{
+  $Global::Context::Env::VERSION = '0.002';
 }
 use Moose::Role;
 # ABSTRACT: the global execution environment
@@ -42,6 +42,12 @@ has stack => (
   default  => sub { Global::Context::Stack::Basic->new },
 );
 
+
+sub stack_trace {
+  my ($self) = @_;
+  map $_->as_string, $self->stack->frames;
+}
+
 sub with_pushed_frame {
   my ($self, $frame) = @_;
 
@@ -61,7 +67,7 @@ Global::Context::Env - the global execution environment
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 OVERVIEW
 
@@ -94,6 +100,13 @@ This attribute cannot be changed after initialization.
 
 Instead, the C<with_pushed_frame> method is used to create a clone of the
 entire environment, save for a new frame pushed onto the stack.
+
+=head1 METHODS
+
+=head2 stack_trace
+
+C<< ->stack_trace >> is a convenience method that returns a list
+containing the string representation of each frame in the stack.
 
 =head1 AUTHOR
 

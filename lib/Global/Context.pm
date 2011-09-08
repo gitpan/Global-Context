@@ -1,8 +1,8 @@
 use strict;
 use warnings;
 package Global::Context;
-BEGIN {
-  $Global::Context::VERSION = '0.001';
+{
+  $Global::Context::VERSION = '0.002';
 }
 # ABSTRACT: track the global execution context of your code
 
@@ -63,6 +63,9 @@ sub _build_ctx_push {
   return sub {
     my ($frame) = @_;
 
+    Carp::croak("Can't push frame onto uninitialized context")
+        unless defined ${ *{ $col->{'$Context'} }{SCALAR} };
+
     $frame = { description => $frame } unless ref $frame;
 
     $frame = $class->default_frame_class->new($frame)
@@ -83,7 +86,7 @@ Global::Context - track the global execution context of your code
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 OVERVIEW
 

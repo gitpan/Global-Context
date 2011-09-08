@@ -20,3 +20,4 @@ lib/Global/Context/Terminal/Basic.pm
 t/export.t
 t/release-pod-syntax.t
 t/simple.t
+t/uninit.t

@@ -1,6 +1,6 @@
 package Global::Context::Stack;
-BEGIN {
-  $Global::Context::Stack::VERSION = '0.001';
+{
+  $Global::Context::Stack::VERSION = '0.002';
 }
 use Moose::Role;
 # ABSTRACT: the stack of a Global::Context::Env object
@@ -20,7 +20,8 @@ has frames => (
   traits => [ 'Array' ],
   default => sub { [] },
   handles => {
-    frames => 'elements',
+    frames        => 'elements',
+    current_frame => [ get => -1 ],
   },
 );
 
@@ -44,7 +45,7 @@ Global::Context::Stack - the stack of a Global::Context::Env object
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 OVERVIEW
 

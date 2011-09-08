@@ -4,37 +4,39 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'track the global execution context of your code',
-  'AUTHOR' => 'Ricardo Signes <rjbs@cpan.org>',
-  'BUILD_REQUIRES' => {
-    'Test::Fatal' => '0',
-    'Test::More' => '0.96'
+  "ABSTRACT" => "track the global execution context of your code",
+  "AUTHOR" => "Ricardo Signes <rjbs\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "Test::Fatal" => 0,
+    "Test::More" => "0.96"
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Global-Context',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Global::Context',
-  'PREREQ_PM' => {
-    'Carp' => '0',
-    'Moose' => '0',
-    'Moose::Role' => '0',
-    'Moose::Util::TypeConstraints' => '0',
-    'MooseX::Clone' => '0',
-    'Sub::Exporter' => '0',
-    'Sub::Exporter::GlobExporter' => '0',
-    'namespace::autoclean' => '0'
+  "DISTNAME" => "Global-Context",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Global::Context",
+  "PREREQ_PM" => {
+    "Carp" => 0,
+    "Moose" => 0,
+    "Moose::Role" => 0,
+    "Moose::Util::TypeConstraints" => 0,
+    "MooseX::Clone" => 0,
+    "Sub::Exporter" => 0,
+    "Sub::Exporter::GlobExporter" => 0,
+    "namespace::autoclean" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.001',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.002",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

@@ -1,6 +1,6 @@
 package Global::Context::AuthToken;
-BEGIN {
-  $Global::Context::AuthToken::VERSION = '0.001';
+{
+  $Global::Context::AuthToken::VERSION = '0.002';
 }
 use Moose::Role;
 # ABSTRACT: an authentication token
@@ -33,7 +33,7 @@ Global::Context::AuthToken - an authentication token
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 OVERVIEW
 
