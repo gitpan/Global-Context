@@ -1,6 +1,6 @@
 package Global::Context::AuthToken;
 {
-  $Global::Context::AuthToken::VERSION = '0.002';
+  $Global::Context::AuthToken::VERSION = '0.003';
 }
 use Moose::Role;
 # ABSTRACT: an authentication token
@@ -25,6 +25,7 @@ has agent => (
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -33,7 +34,7 @@ Global::Context::AuthToken - an authentication token
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 OVERVIEW
 
@@ -60,4 +61,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

@@ -17,7 +17,10 @@ lib/Global/Context/StackFrame.pm
 lib/Global/Context/StackFrame/Basic.pm
 lib/Global/Context/Terminal.pm
 lib/Global/Context/Terminal/Basic.pm
+t/00-compile.t
+t/000-report-versions-tiny.t
 t/export.t
-t/release-pod-syntax.t
 t/simple.t
 t/uninit.t
+xt/release/changes_has_content.t
+xt/release/pod-syntax.t

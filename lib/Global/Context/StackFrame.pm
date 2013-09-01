@@ -1,6 +1,6 @@
 package Global::Context::StackFrame;
 {
-  $Global::Context::StackFrame::VERSION = '0.002';
+  $Global::Context::StackFrame::VERSION = '0.003';
 }
 use Moose::Role;
 # ABSTRACT: one frame in a stack
@@ -20,6 +20,7 @@ has ephemeral => (
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -28,7 +29,7 @@ Global::Context::StackFrame - one frame in a stack
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 OVERVIEW
 
@@ -53,4 +54,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
